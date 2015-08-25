@@ -1,0 +1,65 @@
+html,body{
+    height: 100%;
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 12px;
+    //border: 2px solid red;
+}
+.container{
+    //background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    height: 97%;
+    //visibility: hidden;
+    font-size: 1.5em;
+}
+.header,.footer {
+    height: 10%;
+    overflow: hidden;
+}
+.title,.results{
+    height: 100%;
+}
+.orangeHeader{
+    background-color: #ff8310;
+    border-color: #ff8310 ;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 2rem;
+}
+.sameHeight{
+    height: 60px;
+    cursor: pointer;
+}
+.transitionEfect{
+    transition: all 0.3s;
+}
+.headersDatas{
+    background-color: #ff8310;
+    border-color: #ff8310;
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+}
+.logo{
+    max-width: 100%;
+    height: auto;
+}
+.slidesYears{
+    height:8%;
+    text-align: center;
+    cursor: pointer;
+}
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.noMargin{
+    margin: 0px;
+}
+.noPadding{
+    padding: 0px;
+}
+.well{
+    border-radius: 0px;
+}
