@@ -42,7 +42,7 @@ function mainController($scope,$http,$interval) {
     $scope.grafics = [];
     $scope.labels = ["Total por tienda"];
     $scope.series = ['Tienda A', 'Tienda B','Tienda C'];
-    $scope.dataGraphics = [[[],[],[]],[[],[],[]],[[],[],[]]];
+    $scope.dataGraphics;
     $scope.colors = ['#2ecc71','#3498db','#e74c3c'];
     $scope.grafics = [];
     //Bloque funciones
@@ -75,7 +75,6 @@ function mainController($scope,$http,$interval) {
         ).success(function (response) {
                 $scope.datasServer = response.nna.data.rows;
                 $scope.valuesGrafics();
-                //$scope.loadGrafics();
             }).error(function () {
                 alert("Error en la petición de datos");
             })
@@ -122,11 +121,7 @@ function mainController($scope,$http,$interval) {
         $scope.nameModels[index].showOpts = !$scope.nameModels[index].showOpts;
         $scope.RequestData();
     }
-    /*$scope.loadGrafics = function(){
-        for(var i=0;i<$scope.datasServer[0].cells.length;i++){
-            $scope.grafics[i] = "<canvas class='chart chart-bar' data='dataGraphics["+i+"]' labels='labels'></canvas>";
-        }
-    }*/
+
     $scope.randomTypeGroup =  function(){
         var opt = Math.floor((Math.random() * 3) + 1);
         switch(opt){
